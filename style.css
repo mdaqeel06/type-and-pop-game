@@ -17,6 +17,27 @@ body {
   overflow: hidden;
 }
 
+.small-screen {
+  display: none;
+  background-color: #acff42;
+  color: #000;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+}
+
+@media (max-width: 768px) {
+  .small-screen {
+    display: block;
+  }
+}
+
 .start-game,
 .game-over {
   display: none;
